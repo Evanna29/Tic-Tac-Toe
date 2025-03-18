@@ -1,0 +1,84 @@
+body {
+  background-color: #323232;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+table {
+  border-collapse: collapse;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  border: 5px solid white;
+  cursor: pointer;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  vertical-align: middle; /* Center content vertically */
+}
+
+td:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+tr:first-child td {
+  border-top: none;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+td:first-child {
+  border-left: none;
+}
+
+td:last-child {
+  border-right: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Center the button */
+#resetButton {
+  display: block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #33b3e1;
+  border: 2px solid rgb(215, 201, 201);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Hover effect */
+#resetButton:hover {
+  background-color: #4794ff;
+  transform: scale(1.05);
+}
+
+/* Click effect */
+#resetButton:active {
+  transform: scale(0.95);
+}
